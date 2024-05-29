@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ================== FAVICON ======================= -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <!-- =========================REMIXICON============================ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <script src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">    
     <title>Responsive Personal Portfolio Website</title>
 </head>
 <body>
     <!-- ========================== HEADER ============================ -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">Huy</a>
+            <a href="index.html" class="nav__logo">Nguyễn Thanh Huy</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -50,7 +51,45 @@
 
     <!-- ========================== MAIN ============================ -->
     <main class="main">
+        <!-- ========================== HOME ============================ -->
+        <div class="home section">
+            <div class="home__rectange"></div>
+            <div class="home__container container grid">
+                <div class="home__perfil perfil">
+                    <div class="perfil__content">
+                        <img src="./assets/img/home-perfilV1.png" alt="image" class="perfil__img">
+                    </div>
+                </div>
 
+                <div class="home__content grid">
+                    <div class="home__data grid">
+                        <h1 class="home__name">Nguyễn Thanh Huy</h1>
+                        <h2 class="home__profession">
+                            Database Management
+                            <br> Web Programming
+                        </h2>
+                        <div class="home_social">
+                            <a href="https://github.com/thanhhuy17" target="_blank" class="home__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/huyipc247/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="./assets/pdf/Liz-Cv.pdf" download="" class="home__button button">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <!-- ========================== SERVICES ============================ -->
+        <div class="services section"></div>
+        <!-- ========================== WORK ============================ -->
+        <div class="work section"></div>
     </main>
     <!-- ========================== FOOTER ============================ -->
     <footer class="footer">
@@ -59,6 +98,6 @@
     <!-- ========================== SCROLL UP ============================ -->
 
     <!-- ========================== MAIN JS ============================ -->
-    
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
