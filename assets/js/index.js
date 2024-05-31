@@ -15,14 +15,25 @@ modalButton.forEach((modalButton, i)=>{
 })
 
 // Close
-let activeCloseModal = (modalClick) =>{
-    modal[modalClick].classList.remove('active-modal')
-}
-// Duyệt qua biến modalClose chứa class .services__modal-close để lắng nghe sự kiện click
-// Nếu được click  thì xóa activeModal ra
-modalClose.forEach((modalClose, i)=>{
+// let activeCloseModal = (modalClick) =>{
+//     modal[modalClick].classList.remove('active-modal')
+// }
+// // Duyệt qua biến modalClose chứa class .services__modal-close để lắng nghe sự kiện click
+// // Nếu được click  thì xóa activeModal ra
+// modalClose.forEach((modalClose, i)=>{
+//     modalClose.addEventListener('click', ()=>{
+//         activeCloseModal(i)
+//     })
+// })
+// Cách 2 để đóng
+// Duyệt qua class modalClose
+modalClose.forEach((modalClose)=>{
+    // Lắng nghe sự kiện click
     modalClose.addEventListener('click', ()=>{
-        activeCloseModal(i)
+        //có click thì xóa class active-modal
+        modal.forEach((modalRemodeClass)=>{
+            modalRemodeClass.classList.remove('active-modal')
+        })
     })
 })
 
