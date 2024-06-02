@@ -24,3 +24,30 @@ const bgHeader = ()=>{
 }
 window.addEventListener('scroll', bgHeader);  
 
+/**======= DARK LIGHT THEME ========= */
+const themeButon = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'ri-sun-line'
+
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+const getCurentTheme = ()=> document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurentIcon = ()=> document.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
+
+if(selectedTheme){
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButon.classList[selectedTheme === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+}
+
+// Active / Deactive Theme Moon/Sun
+themeButon.addEventListener('click', ()=>{
+    // Add or remove dark icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButon.classList.toggle(iconTheme)
+    //
+    localStorage.setItem('selected-theme', getCurentTheme())
+    localStorage.setItem('selected-ticon', getCurentIcon())
+
+
+})
