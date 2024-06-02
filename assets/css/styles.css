@@ -773,7 +773,10 @@ body.dark-theme{
     position: fixed;
     right: 1rem;
     bottom: -50%;
+<<<<<<< HEAD
     /* bottom: 2rem; */
+=======
+>>>>>>> cb13e0065ecf3e514bcf7bd96b9b28a426888b4d
     background-color: var(--container-color);
     box-shadow: 0 12px 24px var(--shadow-color);
     display: inline-flex;
@@ -788,6 +791,7 @@ body.dark-theme{
     transform: translateY(-0.5rem);
 }
 .show-scroll{
+<<<<<<< HEAD
     bottom: 3rem;
 }
 /* ========================c BREAK POINTS ============================== */
@@ -796,6 +800,10 @@ body.dark-theme{
     .container {
         margin-inline: 1rem;
     }
+=======
+    bottom: 2rem;
+}
+>>>>>>> cb13e0065ecf3e514bcf7bd96b9b28a426888b4d
 
     .services_modal{
         padding-inline: 0.5rem;
