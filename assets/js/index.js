@@ -52,11 +52,6 @@ const swiperTestimonial = new Swiper('.testimonial__swiper', {
 })
 
 ///**======================= SHOW SCROLL UP FOR HOME =========================== */
-// const scrollUp = ()=>{
-//     const scrollUp = document.getElementById('scroll-up')
-
-//     this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-///**======================= SHOW SCROLL UP =========================== */
 const scrollUp = ()=>{
     const scrollUp = document.getElementById('scroll-up')
 
